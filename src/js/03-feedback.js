@@ -33,6 +33,7 @@ function formSubmit(event) {
 function removeInfo() {
     filterForm.reset();
     localStorage.removeItem("feedback-form-state");
+    writedInfo = {};
 };
 function saveLocalStorage(evt) {
     writedInfo[evt.target.name] = evt.target.value;
